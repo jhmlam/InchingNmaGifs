@@ -11,6 +11,9 @@
             background-color: #f0f0f0;
             padding: 20px;
         }
+        .content-page, .section {
+            display: none;
+        }
         .gallery {
             display: flex;
             flex-wrap: wrap;
@@ -27,15 +30,58 @@
         .gallery img:hover {
             transform: scale(1.05);
         }
+        .button {
+            display: inline-block;
+            margin: 10px;
+            padding: 10px 20px;
+            background-color: #007bff;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 18px;
+            transition: background-color 0.3s;
+        }
+        .button:hover {
+            background-color: #0056b3;
+        }
     </style>
 </head>
 <body>
-    <h1>Human NPC Constriction</h1>
-    <div class="gallery">
-        <a href="./NPC_BirdEye.gif" target="_blank"><img src="../NPC_BirdEye.gif" alt="GIF 1"></a>
-        <a href="./NPC_Side.gif" target="_blank"><img src="../NPC_Side.gif.gif" alt="GIF 2"></a>
-
-        <!-- Add more GIFs as needed -->
+    <h1>GIF Gallery</h1>
+    <div id="content-page" class="content-page" style="display: block;">
+        <button class="button" onclick="showSection('npc-constriction')">Human NPC Constriction</button>
+        <button class="button" onclick="showSection('asymmetric-vault')">Asymmetric Vault</button>
     </div>
+
+    <div id="npc-constriction" class="section">
+        <h2>Human NPC Constriction</h2>
+        <div class="gallery">
+            <a href="./NPC_BirdEye.gif" target="_blank"><img src="./NPC_BirdEye.gif" alt="GIF 1"></a>
+            <a href="./NPC_Side.gif" target="_blank"><img src="./NPC_Side.gif" alt="GIF 2"></a>
+        </div>
+        <button class="button" onclick="showSection('content-page')">Return to Main Menu</button>
+    </div>
+
+    <div id="asymmetric-vault" class="section">
+        <h2>Asymmetric Vault</h2>
+        <div class="gallery">
+            <!-- Add your GIFs for Asymmetric Vault here -->
+            <a href="./Vault_Top.gif" target="_blank"><img src="./Vault_Top.gif" alt="GIF 1"></a>
+            <a href="./Vault_Side.gif" target="_blank"><img src="./Vault_Side.gif" alt="GIF 2"></a>
+        </div>
+        <button class="button" onclick="showSection('content-page')">Return to Main Menu</button>
+    </div>
+
+    <script>
+        function showSection(sectionId) {
+            // Hide all sections
+            document.querySelectorAll('.section, .content-page').forEach(section => {
+                section.style.display = 'none';
+            });
+            // Show the selected section
+            document.getElementById(sectionId).style.display = 'block';
+        }
+    </script>
 </body>
 </html>
