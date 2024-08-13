@@ -50,10 +50,11 @@
 <body>
     <h1>GIF Gallery</h1>
     <div id="content-page" class="content-page" style="display: block;">
+        <button class="button" onclick="showSection('ribosome-prong')">Ribosome Prong</button>
         <button class="button" onclick="showSection('npc-constriction')">Human NPC Inner Ring Constriction</button>
         <button class="button" onclick="showSection('npc-ringring')">Human NPC Outer Ring Twist</button>
         <button class="button" onclick="showSection('asymmetric-vault')">Asymmetric Vault</button>
-        <button class="button" onclick="showSection('dna-origami')">Asymmetric Vault</button>
+        <button class="button" onclick="showSection('dna-origami')">DNA Origami Airplane</button>
     </div>
 
     <div id="npc-constriction" class="section">
@@ -95,7 +96,15 @@
         </div>
         <button class="button" onclick="showSection('content-page')">Return to Main Menu</button>
     </div>
-
+    <div id="ribosome-prong" class="section">
+        <h2>Ribosome, Mode 0 (PDBID:7pkz) </h2>
+        <div class="gallery">
+            <!-- Add your GIFs for Asymmetric Vault here -->
+            <a href="./Vault_Sect.gif" target="_blank"><img src="./Vault_Sect.gif" alt="GIF 1"></a>
+            <a href="./Vault_Top.gif" target="_blank"><img src="./Vault_Top.gif" alt="GIF 2"></a>
+        </div>
+        <button class="button" onclick="showSection('content-page')">Return to Main Menu</button>
+    </div>
 
 
 
