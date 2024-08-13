@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GIF Gallery</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            background-color: #f0f0f0;
+            padding: 20px;
+        }
+        .gallery {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+        }
+        .gallery img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            transition: transform 0.2s;
+        }
+        .gallery img:hover {
+            transform: scale(1.05);
+        }
+    </style>
+</head>
+<body>
+    <h1>Human NPC Constriction</h1>
+    <div class="gallery">
+        <a href="./NPC_BirdEye.gif" target="_blank"><img src="../NPC_BirdEye.gif" alt="GIF 1"></a>
+        <a href="./NPC_Side.gif" target="_blank"><img src="../NPC_Side.gif.gif" alt="GIF 2"></a>
+
+        <!-- Add more GIFs as needed -->
+    </div>
+</body>
+</html>
