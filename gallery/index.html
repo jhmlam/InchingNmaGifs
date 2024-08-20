@@ -45,6 +45,14 @@
         .button:hover {
             background-color: #0056b3;
         }
+        .qr-code {
+            margin-top: 30px;
+        }
+        .qr-code img {
+            max-width: 150px;
+            height: auto;
+            margin-top: 20px;
+        }
     </style>
 </head>
 <body>
@@ -132,6 +140,14 @@
         <button class="button" onclick="showSection('content-page')">Return to Main Menu</button>
     </div>
     
+    <div class="qr-code">
+        <h3>Gif Gallery</h3>
+        <a href="./qr-code_20240814GifLibrary.svg" target="_blank"><img src="./qr-code_20240814GifLibrary.svg" alt="Gif Gallery<"></a>
+        <h3>Article</h3>
+        <a href="./qr-code_20240813Article.svg" target="_blank"><img src="./qr-code_20240813Article.svg" alt="Article"></a>
+        <h3>Google Colab</h3>
+        <a href="./qr-code_20240813GoogleColab.svg" target="_blank"><img src="./qr-code_20240813GoogleColab.svg" alt="Google Colab"></a>
+    </div>
     
     <script>
         function showSection(sectionId) {
